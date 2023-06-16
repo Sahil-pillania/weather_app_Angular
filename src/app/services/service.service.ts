@@ -17,7 +17,7 @@ export class ServiceService {
   // You have to configure your own api host and api keys for this service
    getWeatherData(cityName: string){
       return this.http.get<any>("https://open-weather13.p.rapidapi.com/city/"+cityName,{
-      headers: new HttpHeaders().set('API-Host','Host value' ).set('AP{API-Key','API KEY VALUE'), 
+      headers: new HttpHeaders().set('API-Host','Host value' ).set('API-Key','API KEY VALUE'), 
       // params: new HttpParams().set("landon",cityName)
     } )
     
