@@ -14,10 +14,10 @@ export class ServiceService {
 		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
 	}
 };
-  
+  // You have to configure your own api host and api keys for this service
    getWeatherData(cityName: string){
       return this.http.get<any>("https://open-weather13.p.rapidapi.com/city/"+cityName,{
-      headers: new HttpHeaders().set('X-RapidAPI-Host','open-weather13.p.rapidapi.com' ).set('X-RapidAPI-Key','d899f6047fmsh28ed50c799c6e0cp10a675jsn6affd659127a'), 
+      headers: new HttpHeaders().set('API-Host','Host value' ).set('AP{API-Key','API KEY VALUE'), 
       // params: new HttpParams().set("landon",cityName)
     } )
     
